@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>订单管理</title>
+	<style type="text/css">
+		#editTab{width:250px;margin:20px auto}
+		#editTab td{padding:5px;height:25px}
+		#editTab input{padding:5px;height:25px;width:150px}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/default/easyui.css"/>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/icon.css"/>
+	<script src="/eShop/admin/easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/datagrid-detailview.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/js/order.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	订单管理
+	<hr size="0" />
+		<table id="orderTab"></table>
+		<hr size="0" />
+		<div id="add" style="width:400px;height:200px;" class="easyui-dialog" data-options="closed:true">
+			<form action="" method="post" id="addUser" name="addUser">
+				<table id="editTab">
+					<tr><td>用户ID</td><td><input type="text" id="userid" name="userid" class="easyui-validatebox easyui-textbox"></td> </tr>
+					<tr><td>订单号</td><td><input type="text" id="orderid" name="orderid" class="easyui-validatebox easyui-textbox"></td> </tr>
+					<tr><td>支付金额</td><td><input type="text" id="totalprice" name="totalprice" class="easyui-validatebox easyui-textbox"></td> </tr>
+					<tr><td>订单日期</td><td><input type="text" id="orderdate" name="orderdate" class="easyui-validatebox easyui-textbox"></td> </tr>
+				</table>
+			</form>
+		</div>
+</body>
+</html>

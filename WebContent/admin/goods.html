@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图书管理</title>
+	<style type="text/css">
+		#addTab{width:250px;margin:20px auto}
+		#addTab td{padding:5px;height:25px}
+		#addTab input{padding:5px;height:25px;width:150px}
+		#gimgTab{width:300px;margin:20px auto}
+		#gimgTab td{padding:1px;height:25px}
+		#gimgTab input{padding:1px;height:25px;width:150px}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/default/easyui.css"/>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/icon.css"/>
+	<script src="/eShop/admin/easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/js/goods.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<hr>
+	<b>图书类别:</b><input id="category" name="category">
+	<p/>
+	<table id="goodsTab"></table>
+	<hr size="0" />
+	<div id="add" style="width:400px;height:500px;" class="easyui-dialog" data-options="closed:true">
+		<form action="" method="post" id="addUser" name="addUser" enctype="multipart/form-data">
+			<table id="addTab">
+				<tr><td>商品编号</td><td><input type="text" id="gid" name="gid" class="easyui-validatebox easyui-textbox" data-options="required:true"></td> </tr>
+				<tr><td>书名	</td><td><input type="text" id="gtitle" name="gtitle" class="easyui-validatebox easyui-textbox" data-options="required:true"></td> </tr>
+				<tr><td>作者	</td><td><input type="text" id="gauthor" name="gauthor" class="easyui-validatebox easyui-textbox" data-options="required:true"></td> </tr>
+				<tr><td>售价	</td><td><input type="text" id="gsaleprice" name="gsaleprice" class="easyui-validatebox easyui-textbox" data-options="required:true,validType:'Price'"></td> </tr>
+				<tr><td>优惠价</td><td><input type="text" id="ginprice" name="ginprice" class="easyui-validatebox easyui-textbox" data-options="required:true,validType:'Price'"></td> </tr>
+<!-- 				<tr><td>封面	</td><td><input type="text" id="gimg" name="gimg" class="easyui-validatebox easyui-textbox" data-options="required:true"></td> </tr> -->
+<!-- 				<tr><td>封面<input type="file" id="gimg" name="gimg"></td></tr> -->
+				<tr><td>点击量</td><td><input id="gclicks" name="gclicks" class="easyui-validatebox easyui-textbox"></td> </tr>
+				<tr><td>类别	</td><td><input id="cname" name="cname"></td> </tr>
+				<tr><td>出版社</td><td><input id="pname" name="pname"></td> </tr>
+<!-- 				<tr><td>简介</td><td><input id="pname" name="pname"></td> </tr> -->
+			</table>
+		</form>
+		<form action="" method="post" id="gimgForm" name="gimgForm" enctype="multipart/form-data">
+			<table id="gimgTab">
+				<tr><td>封面	</td><td><input id="gimg" name="gimg" class="easyui-filebox" data-options="buttonText:'选择',prompt:'选择封面进行上传'"></td><td><a id="btn" href="#" class="easyui-linkbutton">上传</a></td></tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

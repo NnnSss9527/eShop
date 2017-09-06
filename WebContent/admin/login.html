@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后台登录</title>
+<style type="text/css">
+	table {width:250px;margin:25px auto}
+	table td{padding:5px}
+</style>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/default/easyui.css"/>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/icon.css"/>
+	<script src="/eShop/admin/easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/js/login.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="login">
+		<form action="" method="post" id="formLogin" name="formLogin">
+			<table>
+				<tr><td>账号	</td><td><input type="text" id="uloginid" name="uloginid" class="easyui-validatebox easyui-textbox" data-options="required:true,missingMessage:'账号不能为空'"></td> </tr>
+				<tr><td>密码</td><td><input type="password" id="upassword" name="upassword" class="easyui-validatebox easyui-textbox" data-options="required:true,missingMessage:'密码不能为空'"></td> </tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

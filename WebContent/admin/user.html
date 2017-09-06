@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>用户管理</title>
+	<style type="text/css">
+		#addTab{width:250px;margin:20px auto}
+		#addTab td{padding:5px;height:25px}
+		#addTab input{padding:5px;height:25px;width:150px}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/default/easyui.css"/>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/icon.css"/>
+	<script src="/eShop/admin/easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/js/user.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		用户管理
+		<hr size="0" />
+		<table id="userTab"></table>
+		<hr size="0" />
+		<div id="add" style="width:400px;height:350px;" class="easyui-dialog" data-options="closed:true">
+			<form action="" method="post" id="addUser" name="addUser">
+				<table id="addTab">
+					<tr><td>邮箱</td><td><input type="text" id="uemail" name="uemail" class="easyui-validatebox easyui-textbox" data-options="required:true,missingMessage:'邮箱不能为空',validType:'email'" autofocus></td> </tr>
+					<tr><td>账号	</td><td><input type="text" id="uloginid" name="uloginid" class="easyui-validatebox easyui-textbox" data-options="required:true,missingMessage:'账号不能为空'"></td> </tr>
+					<tr><td>密码	</td><td><input type="text" id="upassword" name="upassword" class="easyui-validatebox easyui-textbox" data-options="required:true,missingMessage:'密码不能为空'"></td> </tr>
+					<tr><td>地址	</td><td><input type="text" id="uaddress" name="uaddress" class="easyui-validatebox easyui-textbox" data-options="required:true,missingMessage:'地址不能为空'"></td> </tr>
+					<tr><td>电话	</td><td><input type="text" id="utel" name="utel" class="easyui-validatebox easyui-textbox" data-options="required:true,missingMessage:'电话不能为空'"></td> </tr>
+					<tr><td>性别	</td><td><select id="usex" class="easyui-combobox" name="usex" data-options="required:true" style="width: 60px"><option value="男" selected="selected">男</option><option value="女">女</option></select></td> </tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

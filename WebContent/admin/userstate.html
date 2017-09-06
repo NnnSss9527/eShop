@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>账号状态</title>
+	<style type="text/css">
+		#editTab{width:250px;margin:20px auto}
+		#editTab td{padding:5px;height:25px}
+		#editTab input{padding:5px;height:25px;width:150px}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/default/easyui.css"/>
+	<link rel="stylesheet" type="text/css" href="/eShop/admin/easyui/themes/icon.css"/>
+	<script src="/eShop/admin/easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/eShop/admin/js/userstate.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	账号状态
+	<hr size="0" />
+		<table id="userstateTab"></table>
+		<hr size="0" />
+		<div id="add" style="width:400px;height:200px;" class="easyui-dialog" data-options="closed:true">
+			<form action="" method="post" id="addUser" name="addUser">
+				<table id="editTab">
+					<tr><td>账号</td><td><input type="text" id="uloginid" name="uloginid" class="easyui-validatebox easyui-textbox" data-options="required:true" autofocus></td> </tr>
+					<tr><td>状态</td><td><input id="ustatename" name="ustatename"></td> </tr>
+				</table>
+			</form>
+		</div>
+</body>
+</html>
